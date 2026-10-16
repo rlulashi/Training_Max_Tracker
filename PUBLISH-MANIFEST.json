@@ -1,0 +1,22 @@
+{
+  "description": "Public app with generated fictional demo data only",
+  "files": {
+    ".gitignore": "49d7b5e6a85cf524828a79ddd7d0e53b090f6f3ea23d777c4aa9955c478fd3b6",
+    "README.md": "a7044b9e29a1168ae4f373f6bd3043cee04fe2d0bbf7f52f8bfd137d10fa0614",
+    "server.py": "f1c9d781931c789bf45dbb4b800747a49ff2b3369cdc25e5b9a9c23a5cf510e2",
+    "database.py": "3b0ee9902a10203c9f180ea7bd1d1840d4aab87ed86c5fb9aabc274f2bd7a1e4",
+    "training.py": "bff575b17b9cd22bcff5caa7b6d8d2e78a3b10ef0513ec35f845dbf0f482f6a7",
+    "demo_data.py": "2372428ec7aa65aa0fd484d944b9a7295ed86bb2bbcd9ee5fe2e7ac5acbf3296",
+    "start-training.cmd": "04fe492c7fc29d25d5fb7bb3d2f8097dff7b9d83274d65586729f96e4c20d035",
+    "start-training.sh": "4d3a945afa1c699a6b1a31cd544d5930621ab2e562d11bb136dbd01e3f295979",
+    "samples/demo-data.json": "00f68b4d61570fff66cf9440788078d84cfa6fba96c816a53442d5745fcbd907",
+    "tests/test_backend.py": "3eb3aaf85cc56bec2570a3960e860dfb92ada8ab9fc8579a6247373e0003e555",
+    "tests/test_frontend.cjs": "e24718eca771e894f5baf02e3566e6feea8544084171d793fef0b012401c9968",
+    "web/app.js": "7a29fd42b75cb9930c1772f9975949bbcddb710cca3736d0da6456a1d1be257f",
+    "web/storage.js": "812dd33b0914d992a738e34c4c6fd608bb66d1c82b7822cbdf5ee02242fd9a78",
+    "web/lifts.js": "d485ad975de9393841bd134d80508951539972909b17766fbbebff7c4f63cd9c",
+    "web/styles.css": "10531b7ac9c93c070c82c05a7790ca6ca150dcdfc76c840c6286dca986bbc0b8",
+    "web/index.html": "d9744b1338d211757ade83bdfe62410a0d29475822edaecf33f0c2c44e84e42e",
+    "web/band-presets.json": "d3eb2e94ce6950ca92c855cd630a4c307dbf7be0673eecaeaa48c915da6fecd0"
+  }
+}

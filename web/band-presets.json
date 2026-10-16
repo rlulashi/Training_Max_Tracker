@@ -1,0 +1,30 @@
+{
+  "sources": {
+    "beginner": "https://www.westside-barbell.com/blogs/the-blog/beginner-band-guide",
+    "large": "https://www.westside-barbell.com/blogs/the-blog/wsbb-blog-guide-to-the-westside-light-average-and-strong-bands"
+  },
+  "presets": [
+    {"id":"mini-bench","band":"mini","setup":"reference","point":"reference","min":80,"max":100,"label":"Speed bench — beginner guide","source":"beginner"},
+    {"id":"mini-deadlift","band":"mini","setup":"reference","point":"reference","min":180,"max":200,"label":"Speed deadlift — beginner guide","source":"beginner"},
+    {"id":"mini-rack","band":"mini","setup":"quadded","point":"reference","min":180,"max":200,"label":"Quadded rack pull — beginner guide","source":"beginner"},
+    {"id":"monster-bench","band":"monster-mini","setup":"reference","point":"reference","min":100,"max":120,"label":"Speed bench — beginner guide","source":"beginner"},
+    {"id":"monster-deadlift","band":"monster-mini","setup":"reference","point":"reference","min":220,"max":250,"label":"Speed deadlift — beginner guide","source":"beginner"},
+    {"id":"monster-rack","band":"monster-mini","setup":"quadded","point":"reference","min":220,"max":250,"label":"Quadded rack pull — beginner guide","source":"beginner"},
+    {"id":"light-bench","band":"light","setup":"doubled","point":"reference","min":120,"max":140,"label":"Halved bench — beginner guide","source":"beginner"},
+    {"id":"light-squat","band":"light","setup":"choked","point":"reference","min":130,"max":160,"label":"Anchored squat — beginner guide","source":"beginner"},
+    {"id":"average-squat","band":"average","setup":"choked","point":"reference","min":180,"max":200,"label":"Anchored squat — beginner guide","source":"beginner"},
+    {"id":"strong-squat","band":"strong","setup":"choked","point":"reference","min":220,"max":250,"label":"Anchored squat — beginner guide","source":"beginner"},
+    {"id":"light-squat-large","band":"light","setup":"choked","point":"reference","min":110,"max":130,"label":"Choked squat — Light/Average/Strong guide","source":"large"},
+    {"id":"light-bench-large","band":"light","setup":"doubled","point":"top","min":150,"max":180,"label":"Halved bench at lockout — Light/Average/Strong guide","source":"large"},
+    {"id":"light-rack-large","band":"light","setup":"doubled","point":"top","min":220,"max":250,"label":"Halved rack pull at lockout — Light/Average/Strong guide","source":"large"},
+    {"id":"average-squat-large","band":"average","setup":"choked","point":"top","min":160,"max":190,"label":"Choked squat at lockout — Light/Average/Strong guide","source":"large"},
+    {"id":"average-rack-large","band":"average","setup":"doubled","point":"top","min":240,"max":270,"label":"Halved rack pull at lockout — Light/Average/Strong guide","source":"large"},
+    {"id":"strong-squat-large","band":"strong","setup":"choked","point":"top","min":200,"max":250,"label":"Choked squat at top — Light/Average/Strong guide","source":"large"},
+    {"id":"reverse-mini-squat","band":"mini","setup":"single","point":"bottom","direction":"reverse","min":55,"max":55,"label":"Reverse squat","source":"lightened-method"},
+    {"id":"reverse-monster-squat","band":"monster-mini","setup":"single","point":"bottom","direction":"reverse","min":110,"max":110,"label":"Reverse squat","source":"lightened-method"},
+    {"id":"reverse-light-squat","band":"light","setup":"single","point":"bottom","direction":"reverse","min":200,"max":200,"label":"Reverse squat","source":"lightened-method"},
+    {"id":"reverse-strong-bench","band":"strong","setup":"single","point":"bottom","direction":"reverse","min":155,"max":155,"label":"Reverse bench, seven-foot attachment","source":"lightened-method"},
+    {"id":"average-general","band":"average","setup":"reference","point":"reference","min":180,"max":200,"label":"General band approximation","source":"beginner","fallback":true,"assumption":"Uses the anchored squat range as an approximate fallback, not an exercise-specific tension rating."},
+    {"id":"strong-general","band":"strong","setup":"reference","point":"reference","min":220,"max":250,"label":"General band approximation","source":"beginner","fallback":true,"assumption":"Uses the anchored squat range as an approximate fallback, not an exercise-specific tension rating."}
+  ]
+}

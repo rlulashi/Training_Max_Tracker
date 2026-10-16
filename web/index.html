@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Training Max Tracker</title>
+    <link rel="stylesheet" href="./styles.css?v=20261016-band-defaults" />
+  </head>
+  <body>
+    <section class="database-toolbar" aria-label="Database and backup controls">
+      <span id="saveStatus" role="status">Connecting to SQLite…</span>
+      <button id="exportData" type="button">Export data</button>
+      <button id="databaseBackup" type="button">Database backup</button>
+      <button id="retrySave" type="button" hidden>Retry save</button>
+      <button id="useDatabase" type="button" hidden>Load database version</button>
+    </section>
+    <section id="migrationPanel" class="migration-panel" aria-labelledby="migrationTitle" hidden>
+      <h1 id="migrationTitle">Start tracking</h1>
+      <p>Start with an empty training log, preview fictional demo athletes, or import your own JSON export.</p>
+      <label>Preview a training export <input id="importFile" type="file" accept=".json,application/json"></label>
+      <p>Demo data is entirely fictional and demonstrates lift groups, variations, workouts, charts and accommodating resistance.</p>
+      <button id="previewDemo" type="button">Preview demo data</button>
+      <button id="startEmpty" type="button">Preview empty database</button>
+      <p id="migrationPreview" role="status">Choose a source to see its contents before importing.</p>
+      <button id="confirmImport" type="button" disabled>Import this data</button>
+    </section>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Exercise controls">
+        <div>
+          <p class="eyebrow">Training Max Tracker</p>
+          <h1>Exercise Log</h1>
+          <div class="view-toggle" aria-label="App view">
+            <button id="athleteViewButton" type="button" aria-pressed="true">Athlete</button>
+            <button id="coachViewButton" type="button" aria-pressed="false">Coach</button>
+            <button id="darkModeButton" type="button" aria-pressed="false">Dark</button>
+          </div>
+        </div>
+        <button id="openAddExercise" type="button">Add exercise</button>
+      </section>
+
+      <dialog id="exerciseDialog" class="exercise-dialog" aria-labelledby="exerciseDialogTitle">
+        <header class="exercise-dialog-header">
+          <h2 id="exerciseDialogTitle">Add exercise</h2>
+          <button id="closeExerciseDialog" class="ghost-button" type="button">Cancel</button>
+        </header>
+        <form id="exerciseForm" class="exercise-form">
+          <label class="unit-picker">Max units
+            <select id="unitMax"><option value="lb">lb</option><option value="kg">kg</option></select>
+          </label>
+          <label>
+            <span>Main exercise</span>
+            <select id="exerciseGroup">
+              <option value="squat">Squat</option>
+              <option value="bench">Bench Press</option>
+              <option value="deadlift">Deadlift</option>
+              <option value="overhead">Overhead Press</option>
+              <option value="other">Other exercises</option>
+              <option value="new">Add another main exercise…</option>
+            </select>
+          </label>
+          <label id="newExerciseGroupLabel" hidden>
+            <span>New main exercise name</span>
+            <input id="newExerciseGroup" type="text" autocomplete="off" placeholder="New main exercise" disabled />
+          </label>
+          <label id="exerciseStanceLabel" hidden>
+            <span>Deadlift stance</span>
+            <select id="exerciseStance" disabled>
+              <option value="conventional">Conventional</option>
+              <option value="sumo">Sumo</option>
+              <option value="unspecified">Stance not set (existing records)</option>
+            </select>
+          </label>
+          <label>
+            <span>Exercise / variation</span>
+            <input id="exerciseName" type="text" autocomplete="off" placeholder="Squat" required />
+          </label>
+          <label>
+            <span id="oneRepMaxLabel">Current 1RM (lb)</span>
+            <input id="oneRepMax" type="number" min="0" step="any" placeholder="315" required />
+          </label>
+          <label>
+            <span>TM modifier</span>
+            <select id="trainingMaxPercent">
+              <option value="85">85%</option>
+              <option value="90">90%</option>
+            </select>
+          </label>
+          <button type="submit">Add exercise</button>
+        </form>
+      </dialog>
+
+      <section id="coachPanel" class="coach-panel hidden" aria-label="Coach athlete selection">
+        <div class="coach-header">
+          <div>
+            <p class="eyebrow">Coach View</p>
+            <h2>Athletes</h2>
+          </div>
+          <form id="athleteForm" class="athlete-form">
+            <label>
+              <span>Athlete name</span>
+              <input id="athleteName" type="text" autocomplete="off" placeholder="Athlete name" required />
+            </label>
+            <button type="submit">Add athlete</button>
+          </form>
+        </div>
+        <div id="athleteList" class="athlete-items"></div>
+      </section>
+
+        <section class="exercise-list main-exercise-navigation" aria-label="Exercise selection">
+          <div class="list-header">
+            <h2 id="exerciseListTitle">Exercises</h2>
+            <button id="clearData" class="ghost-button" type="button">Clear</button>
+          </div>
+          <nav id="mainExerciseTabs" class="main-exercise-tabs" aria-label="Main exercises"></nav>
+          <div id="exerciseList" class="exercise-items"></div>
+        </section>
+
+      <section class="workspace">
+        <section class="exercise-detail" aria-live="polite">
+          <div id="emptyState" class="empty-state">
+            <h2>Add an exercise to begin</h2>
+            <p>Choose a main exercise or variation, then enter its own 1RM to start tracking. Each variation keeps separate records.</p>
+          </div>
+
+          <article id="detailPanel" class="detail-panel hidden">
+            <header class="detail-header">
+              <div>
+                <p id="selectedName" class="eyebrow"></p>
+                <h2 id="selectedTitle"></h2>
+              </div>
+              <div class="header-actions">
+                <label class="unit-picker">Table units
+                  <select id="unitTable"><option value="lb">lb</option><option value="kg">kg</option></select>
+                </label>
+                <button id="editExercise" class="ghost-button" type="button">Edit</button>
+                <button id="deleteExercise" class="danger-button" type="button">Delete</button>
+              </div>
+            </header>
+
+            <div class="metrics">
+              <div>
+                <span>1RM</span>
+                <strong id="selectedOneRepMax"></strong>
+              </div>
+              <div>
+                <span id="baseTrainingMaxLabel">Base training max</span>
+                <strong id="baseTrainingMax"></strong>
+              </div>
+              <div>
+                <span>Current training max</span>
+                <strong id="currentTrainingMax"></strong>
+              </div>
+              <div>
+                <span>TM changes</span>
+                <strong id="earnedIncreases"></strong>
+              </div>
+            </div>
+
+            <div class="manual-controls">
+              <form id="oneRepOnlyForm" class="mini-form">
+                <label>
+                  <span id="recordOneRepMaxLabel">Update 1RM only (lb)</span>
+                  <input id="recordOneRepMax" type="number" min="0" step="any" placeholder="340" />
+                </label>
+                <button class="save-row-button" type="submit">Save</button>
+              </form>
+              <form id="manualTmForm" class="mini-form">
+                <label>
+                  <span id="manualTmAmountLabel">TM adjustment (lb)</span>
+                  <input id="manualTmAmount" type="number" step="any" placeholder="5 or -5" />
+                </label>
+                <button class="save-row-button" type="submit">Save</button>
+              </form>
+            </div>
+
+            <p id="autoIncreaseNotice" class="notice hidden"></p>
+            <div class="progress-controls">
+              <button id="progressTrainingMax" class="progress-button" type="button" disabled>
+                Progress TM +5 lb
+              </button>
+            </div>
+
+            <details id="percentageDetails" class="collapsible-section">
+              <summary class="section-summary">Percentages &amp; Best Reps</summary>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Percent</th>
+                    <th>Weight</th>
+                    <th>Best reps
+                      <div class="best-reps-toggle" role="group" aria-label="Best reps category">
+                        <button id="bestRepsWeight" type="button" aria-pressed="true">Weight</button>
+                        <button id="bestRepsAR" type="button" aria-pressed="false">AR</button>
+                      </div>
+                    </th>
+                    <th>Saved lifts</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="percentageRows"></tbody>
+              </table>
+            </div>
+            </details>
+
+            <section class="workout-panel" aria-label="Workout log and volume chart">
+              <div class="workout-grid">
+                <div class="workout-entry-panel">
+                  <div class="workout-entry-header">
+                    <p class="eyebrow">Workout Log</p>
+                    <h2 id="workoutEntryTitle">Sets and Reps</h2>
+                    <label class="unit-picker">Workout units
+                      <select id="unitWorkout"><option value="lb">lb</option><option value="kg">kg</option></select>
+                    </label>
+                  </div>
+                  <form id="workoutForm" class="workout-form workout-form-row">
+                    <div class="workout-form-line workout-load-line">
+                      <label>
+                        <span>Date</span>
+                        <input id="workoutDate" type="date" required />
+                      </label>
+                      <label>
+                        <span id="workoutWeightLabel">Weight (lb)</span>
+                        <input id="workoutWeight" type="number" min="0" step="any" placeholder="295" />
+                      </label>
+                      <label>
+                        <span>Percent</span>
+                        <input id="workoutPercent" type="number" min="0" step="any" placeholder="80" />
+                      </label>
+                    </div>
+                    <div class="workout-form-line workout-rep-line">
+                      <label>
+                        <span>Sets</span>
+                        <input id="workoutSets" type="number" min="1" step="1" placeholder="3" required />
+                      </label>
+                      <label>
+                        <span>Reps</span>
+                        <input id="workoutReps" type="number" min="1" step="1" placeholder="3" required />
+                      </label>
+                      <label>
+                        <span>Accommodating Resistance</span>
+                        <select id="workoutResistance">
+                          <option value="none">None</option>
+                          <option value="chains">Chains</option>
+                          <option value="bands">Bands</option>
+                        </select>
+                      </label>
+                      <button id="workoutSubmit" class="save-row-button" type="submit">Save</button>
+                    </div>
+                    <div id="chainFields" class="workout-form-line workout-chain-line" hidden>
+                      <label>
+                        <span id="workoutChainWeightLabel">Chain weight (lb)</span>
+                        <input id="workoutChainWeight" type="number" min="0" step="any" placeholder="80" disabled />
+                      </label>
+                      <label>
+                        <span>Weight applies to</span>
+                        <select id="workoutChainBasis" disabled>
+                          <option value="per-side">Each side (double it)</option>
+                          <option value="total">Both sides total</option>
+                        </select>
+                      </label>
+                      <p id="chainSummary" class="chain-summary" role="status"></p>
+                    </div>
+                    <div id="bandFields" class="workout-form-line workout-chain-line" hidden>
+                      <label>
+                        <span>Band</span>
+                        <select id="workoutBand" disabled>
+                          <option value="micro-mini">Micro mini</option>
+                          <option value="mini">Red mini</option>
+                          <option value="monster-mini">Monster mini</option>
+                          <option value="light">Light</option>
+                          <option value="average">Average</option>
+                          <option value="strong">Strong</option>
+                          <option value="custom">Custom / other</option>
+                        </select>
+                      </label>
+                      <label>
+                        <span>Setup</span>
+                        <select id="workoutBandSetup" disabled>
+                          <option value="single">Single looped</option>
+                          <option value="doubled">Doubled</option>
+                          <option value="quadded">Quadded</option>
+                          <option value="choked">Choked / anchored squat</option>
+                          <option value="other">Other setup</option>
+                        </select>
+                      </label>
+                      <label>
+                        <span>Pull direction</span>
+                        <select id="workoutBandDirection" disabled>
+                          <option value="down">Down</option>
+                          <option value="forward">Forward</option>
+                          <option value="reverse">Reverse</option>
+                        </select>
+                      </label>
+                      <label>
+                        <span id="workoutBandWeightLabel">Tension / assistance (lb)</span>
+                        <input id="workoutBandWeight" type="number" min="0" step="any" aria-describedby="bandTensionStatus bandSummary" disabled />
+                        <span id="bandTensionStatus" class="band-tension-status" role="status"></span>
+                      </label>
+                      <label>
+                        <span>Tension applies to</span>
+                        <select id="workoutBandBasis" disabled>
+                          <option value="total">Both sides total</option>
+                          <option value="per-side">Each side (double it)</option>
+                        </select>
+                      </label>
+                      <label class="band-notes">
+                        <span>Setup notes (optional)</span>
+                        <input id="workoutBandNotes" type="text" maxlength="500" placeholder="Anchor height, band combination, custom band…" disabled />
+                      </label>
+                      <p id="bandSummary" class="chain-summary" role="status"></p>
+
+                    </div>
+                    <button id="cancelWorkoutEdit" class="ghost-button" type="button" hidden>Cancel edit</button>
+                  </form>
+
+                </div>
+
+                <article class="volume-panel">
+                  <div class="volume-header">
+                    <div>
+                      <p class="eyebrow">Volume</p>
+                      <h2>Total Volume</h2>
+                    </div>
+                    <div class="period-toggle" aria-label="Volume grouping">
+                      <button id="volumeDayButton" type="button" data-period="day" aria-pressed="true">Day</button>
+                      <button id="volumeWeekButton" type="button" data-period="week" aria-pressed="false">Week</button>
+                      <button id="volumeMonthButton" type="button" data-period="month" aria-pressed="false">Month</button>
+                      <button id="volumeYearButton" type="button" data-period="year" aria-pressed="false">Year</button>
+                    </div>
+                    <label class="unit-picker">Volume units
+                      <select id="unitVolume"><option value="lb">lb</option><option value="kg">kg</option></select>
+                    </label>
+                  </div>
+                  <div id="volumeChart" class="volume-chart" aria-live="polite"></div>
+                </article>
+              </div>
+
+              <details id="workoutHistoryDetails" class="workout-history">
+                <summary class="history-header">
+                  <h2>Workout History</h2>
+                  <span id="workoutCount" class="muted"></span>
+                </summary>
+                <div id="workoutHistory" class="history-list"></div>
+              </details>
+            </section>
+          </article>
+        </section>
+      </section>
+
+      <section class="bar-loader" aria-label="Bar loading calculator">
+        <header class="tool-header">
+          <div>
+            <p class="eyebrow">Bar Loader</p>
+            <h2>Plate Calculator</h2>
+          </div>
+          <div id="loadSummary" class="load-summary">Enter a target to load the bar.</div>
+          <label class="unit-picker">Calculator units
+            <select id="unitLoader"><option value="lb">lb</option><option value="kg">kg</option></select>
+          </label>
+        </header>
+
+        <div class="loader-grid">
+          <form id="loaderForm" class="loader-form">
+            <label>
+              <span>Bar</span>
+              <select id="barType"></select>
+            </label>
+            <label id="customBarLabel" class="hidden">
+              <span id="customBarWeightLabel">Custom bar (lb)</span>
+              <input id="customBarWeight" type="number" min="0" step="any" value="45" />
+            </label>
+            <label>
+              <span>Mode</span>
+              <select id="loadMode">
+                <option value="target">Target weight</option>
+                <option value="percent">Percent of 1RM</option>
+              </select>
+            </label>
+            <label>
+              <span id="loadValueLabel">Target weight</span>
+              <input id="loadValue" type="number" min="0" step="any" placeholder="400" />
+            </label>
+            <label id="loadPercentLabel" class="hidden">
+              <span>Percent</span>
+              <input id="loadPercent" type="number" min="0" step="any" placeholder="77.5" />
+            </label>
+            <label>
+              <span>Plates</span>
+              <select id="plateSet">
+                <option value="standard">Standard</option>
+                <option value="calibrated">Calibrated</option>
+                <option value="calibratedKg">Calibrated kg</option>
+              </select>
+            </label>
+            <label class="checkbox-label">
+              <input id="useHundredPlates" type="checkbox" />
+              <span>Use 100 lb plates</span>
+            </label>
+            <label class="checkbox-label">
+              <input id="useFiftyKgPlates" type="checkbox" />
+              <span>Use 50 kg plates</span>
+            </label>
+            <label class="checkbox-label">
+              <input id="useCollars" type="checkbox" />
+              <span>Collars</span>
+            </label>
+            <button type="submit">Calculate</button>
+          </form>
+
+          <article class="loader-output">
+            <div class="bar-visual" aria-label="Barbell loading visualization">
+              <div id="leftPlates" class="plate-stack left-stack"></div>
+              <div class="bar-shaft">
+                <span id="barLabel">45 lb Olympic Bar</span>
+              </div>
+              <div id="rightPlates" class="plate-stack right-stack"></div>
+            </div>
+            <div id="plateBreakdown" class="plate-breakdown"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="unit-converter" aria-label="Weight unit converter">
+        <header class="tool-header">
+          <div>
+            <p class="eyebrow">Unit Converter</p>
+            <h2>Pounds / Kilograms</h2>
+          </div>
+          <div id="conversionResult" class="load-summary">Enter a weight to convert.</div>
+        </header>
+
+        <form id="converterForm" class="converter-form">
+          <label>
+            <span>Weight</span>
+            <input id="conversionValue" type="number" min="0" step="0.01" placeholder="225" />
+          </label>
+          <label>
+            <span>Convert</span>
+            <select id="conversionDirection">
+              <option value="lb-to-kg">lb to kg</option>
+              <option value="kg-to-lb">kg to lb</option>
+            </select>
+          </label>
+          <button type="submit">Convert</button>
+        </form>
+      </section>
+    </main>
+
+    <template id="rowTemplate">
+      <tr>
+        <td class="percent-cell"></td>
+        <td class="weight-cell"></td>
+        <td>
+          <input class="reps-input" type="number" min="0" step="1" inputmode="numeric" aria-label="Best reps" />
+        </td>
+        <td class="records-cell"></td>
+        <td>
+          <button class="save-row-button" type="button">Save</button>
+        </td>
+      </tr>
+    </template>
+
+    <script src="./storage.js"></script>
+    <script src="./lifts.js"></script>
+    <script src="./app.js?v=20261016-band-defaults"></script>
+  </body>
+</html>

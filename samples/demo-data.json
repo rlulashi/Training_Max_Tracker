@@ -1,0 +1,2559 @@
+{
+  "demo": true,
+  "demoNotice": "All athletes and training histories in this file are fictional.",
+  "athletes": [
+    {
+      "id": "demo-1",
+      "name": "Demo Athlete A",
+      "exercises": [
+        {
+          "id": "demo-1-lift-1",
+          "name": "Squat",
+          "oneRepMax": 500,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 425,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 425,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 425,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-1-workout-1",
+              "date": "2026-01-05",
+              "weight": 275,
+              "percent": 64.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-1-workout-2",
+              "date": "2026-01-08",
+              "weight": 285,
+              "percent": 67.1,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-1-workout-3",
+              "date": "2026-01-11",
+              "weight": 300,
+              "percent": 70.6,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-1-workout-4",
+              "date": "2026-01-14",
+              "weight": 310,
+              "percent": 72.9,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-1-workout-5",
+              "date": "2026-01-17",
+              "weight": 320,
+              "percent": 75.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-1-workout-6",
+              "date": "2026-01-20",
+              "weight": 330,
+              "percent": 77.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-1-workout-7",
+              "date": "2026-01-23",
+              "weight": 340,
+              "percent": 80.0,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-1-workout-8",
+              "date": "2026-01-26",
+              "weight": 350,
+              "percent": 82.4,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "squat",
+          "liftGroupLabel": "Squat",
+          "liftRole": "main"
+        },
+        {
+          "id": "demo-1-lift-2",
+          "name": "Box Squat",
+          "oneRepMax": 450,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 385,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 385,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 385,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-2-workout-1",
+              "date": "2026-01-05",
+              "weight": 250,
+              "percent": 64.9,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-2-workout-2",
+              "date": "2026-01-08",
+              "weight": 260,
+              "percent": 67.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-2-workout-3",
+              "date": "2026-01-11",
+              "weight": 270,
+              "percent": 70.1,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-2-workout-4",
+              "date": "2026-01-14",
+              "weight": 280,
+              "percent": 72.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-2-workout-5",
+              "date": "2026-01-17",
+              "weight": 290,
+              "percent": 75.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-2-workout-6",
+              "date": "2026-01-20",
+              "weight": 300,
+              "percent": 77.9,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-2-workout-7",
+              "date": "2026-01-23",
+              "weight": 310,
+              "percent": 80.5,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-2-workout-8",
+              "date": "2026-01-26",
+              "weight": 320,
+              "percent": 83.1,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "squat",
+          "liftGroupLabel": "Squat",
+          "liftRole": "variation"
+        },
+        {
+          "id": "demo-1-lift-3",
+          "name": "Bench Press",
+          "oneRepMax": 350,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 300,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 300,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 300,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-3-workout-1",
+              "date": "2026-01-05",
+              "weight": 195,
+              "percent": 65.0,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-3-workout-2",
+              "date": "2026-01-08",
+              "weight": 205,
+              "percent": 68.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-3-workout-3",
+              "date": "2026-01-11",
+              "weight": 210,
+              "percent": 70.0,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-3-workout-4",
+              "date": "2026-01-14",
+              "weight": 220,
+              "percent": 73.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-3-workout-5",
+              "date": "2026-01-17",
+              "weight": 225,
+              "percent": 75.0,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-3-workout-6",
+              "date": "2026-01-20",
+              "weight": 235,
+              "percent": 78.3,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-3-workout-7",
+              "date": "2026-01-23",
+              "weight": 240,
+              "percent": 80.0,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-3-workout-8",
+              "date": "2026-01-26",
+              "weight": 250,
+              "percent": 83.3,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "bench",
+          "liftGroupLabel": "Bench Press",
+          "liftRole": "main"
+        },
+        {
+          "id": "demo-1-lift-4",
+          "name": "Floor Press",
+          "oneRepMax": 315,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 270,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 270,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 270,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-4-workout-1",
+              "date": "2026-01-05",
+              "weight": 175,
+              "percent": 64.8,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-4-workout-2",
+              "date": "2026-01-08",
+              "weight": 180,
+              "percent": 66.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-4-workout-3",
+              "date": "2026-01-11",
+              "weight": 190,
+              "percent": 70.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-4-workout-4",
+              "date": "2026-01-14",
+              "weight": 195,
+              "percent": 72.2,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-4-workout-5",
+              "date": "2026-01-17",
+              "weight": 205,
+              "percent": 75.9,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-4-workout-6",
+              "date": "2026-01-20",
+              "weight": 210,
+              "percent": 77.8,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-4-workout-7",
+              "date": "2026-01-23",
+              "weight": 215,
+              "percent": 79.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-4-workout-8",
+              "date": "2026-01-26",
+              "weight": 225,
+              "percent": 83.3,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "bench",
+          "liftGroupLabel": "Bench Press",
+          "liftRole": "variation"
+        },
+        {
+          "id": "demo-1-lift-5",
+          "name": "Deadlift",
+          "oneRepMax": 550,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 470,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 470,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 470,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-5-workout-1",
+              "date": "2026-01-05",
+              "weight": 305,
+              "percent": 64.9,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-5-workout-2",
+              "date": "2026-01-08",
+              "weight": 315,
+              "percent": 67.0,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-5-workout-3",
+              "date": "2026-01-11",
+              "weight": 330,
+              "percent": 70.2,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-5-workout-4",
+              "date": "2026-01-14",
+              "weight": 340,
+              "percent": 72.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-5-workout-5",
+              "date": "2026-01-17",
+              "weight": 355,
+              "percent": 75.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-5-workout-6",
+              "date": "2026-01-20",
+              "weight": 365,
+              "percent": 77.7,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-5-workout-7",
+              "date": "2026-01-23",
+              "weight": 375,
+              "percent": 79.8,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-5-workout-8",
+              "date": "2026-01-26",
+              "weight": 390,
+              "percent": 83.0,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "deadlift",
+          "liftGroupLabel": "Deadlift",
+          "liftRole": "main",
+          "deadliftStyle": "conventional"
+        },
+        {
+          "id": "demo-1-lift-6",
+          "name": "Deadlift",
+          "oneRepMax": 525,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 445,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 445,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 445,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-6-workout-1",
+              "date": "2026-01-05",
+              "weight": 290,
+              "percent": 65.2,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-6-workout-2",
+              "date": "2026-01-08",
+              "weight": 300,
+              "percent": 67.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-6-workout-3",
+              "date": "2026-01-11",
+              "weight": 310,
+              "percent": 69.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-6-workout-4",
+              "date": "2026-01-14",
+              "weight": 325,
+              "percent": 73.0,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-6-workout-5",
+              "date": "2026-01-17",
+              "weight": 335,
+              "percent": 75.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-6-workout-6",
+              "date": "2026-01-20",
+              "weight": 345,
+              "percent": 77.5,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-6-workout-7",
+              "date": "2026-01-23",
+              "weight": 355,
+              "percent": 79.8,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-6-workout-8",
+              "date": "2026-01-26",
+              "weight": 365,
+              "percent": 82.0,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "deadlift",
+          "liftGroupLabel": "Deadlift",
+          "liftRole": "main",
+          "deadliftStyle": "sumo"
+        },
+        {
+          "id": "demo-1-lift-7",
+          "name": "Rack Pull",
+          "oneRepMax": 600,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 510,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 510,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 510,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-7-workout-1",
+              "date": "2026-01-05",
+              "weight": 330,
+              "percent": 64.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-7-workout-2",
+              "date": "2026-01-08",
+              "weight": 345,
+              "percent": 67.6,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-7-workout-3",
+              "date": "2026-01-11",
+              "weight": 355,
+              "percent": 69.6,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-7-workout-4",
+              "date": "2026-01-14",
+              "weight": 370,
+              "percent": 72.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-7-workout-5",
+              "date": "2026-01-17",
+              "weight": 385,
+              "percent": 75.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-7-workout-6",
+              "date": "2026-01-20",
+              "weight": 395,
+              "percent": 77.5,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-7-workout-7",
+              "date": "2026-01-23",
+              "weight": 410,
+              "percent": 80.4,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-7-workout-8",
+              "date": "2026-01-26",
+              "weight": 420,
+              "percent": 82.4,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "deadlift",
+          "liftGroupLabel": "Deadlift",
+          "liftRole": "variation",
+          "deadliftStyle": "conventional"
+        },
+        {
+          "id": "demo-1-lift-8",
+          "name": "Overhead Press",
+          "oneRepMax": 225,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 190,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 190,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 190,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-8-workout-1",
+              "date": "2026-01-05",
+              "weight": 125,
+              "percent": 65.8,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-8-workout-2",
+              "date": "2026-01-08",
+              "weight": 130,
+              "percent": 68.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-8-workout-3",
+              "date": "2026-01-11",
+              "weight": 135,
+              "percent": 71.1,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-8-workout-4",
+              "date": "2026-01-14",
+              "weight": 140,
+              "percent": 73.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-8-workout-5",
+              "date": "2026-01-17",
+              "weight": 145,
+              "percent": 76.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-8-workout-6",
+              "date": "2026-01-20",
+              "weight": 145,
+              "percent": 76.3,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-8-workout-7",
+              "date": "2026-01-23",
+              "weight": 150,
+              "percent": 78.9,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-8-workout-8",
+              "date": "2026-01-26",
+              "weight": 155,
+              "percent": 81.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "overhead",
+          "liftGroupLabel": "Overhead Press",
+          "liftRole": "main"
+        },
+        {
+          "id": "demo-1-lift-9",
+          "name": "Log",
+          "oneRepMax": 200,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 170,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 170,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 170,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-1-lift-9-workout-1",
+              "date": "2026-01-05",
+              "weight": 110,
+              "percent": 64.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-9-workout-2",
+              "date": "2026-01-08",
+              "weight": 115,
+              "percent": 67.6,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-9-workout-3",
+              "date": "2026-01-11",
+              "weight": 120,
+              "percent": 70.6,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-9-workout-4",
+              "date": "2026-01-14",
+              "weight": 125,
+              "percent": 73.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-9-workout-5",
+              "date": "2026-01-17",
+              "weight": 130,
+              "percent": 76.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-1-lift-9-workout-6",
+              "date": "2026-01-20",
+              "weight": 130,
+              "percent": 76.5,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-1-lift-9-workout-7",
+              "date": "2026-01-23",
+              "weight": 135,
+              "percent": 79.4,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-1-lift-9-workout-8",
+              "date": "2026-01-26",
+              "weight": 140,
+              "percent": 82.4,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "overhead",
+          "liftGroupLabel": "Overhead Press",
+          "liftRole": "variation"
+        }
+      ]
+    },
+    {
+      "id": "demo-2",
+      "name": "Demo Athlete B",
+      "exercises": [
+        {
+          "id": "demo-2-lift-1",
+          "name": "Squat",
+          "oneRepMax": 475,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 405,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 405,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 405,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-1-workout-1",
+              "date": "2026-01-05",
+              "weight": 265,
+              "percent": 65.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-1-workout-2",
+              "date": "2026-01-08",
+              "weight": 275,
+              "percent": 67.9,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-1-workout-3",
+              "date": "2026-01-11",
+              "weight": 285,
+              "percent": 70.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-1-workout-4",
+              "date": "2026-01-14",
+              "weight": 295,
+              "percent": 72.8,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-1-workout-5",
+              "date": "2026-01-17",
+              "weight": 305,
+              "percent": 75.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-1-workout-6",
+              "date": "2026-01-20",
+              "weight": 315,
+              "percent": 77.8,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-1-workout-7",
+              "date": "2026-01-23",
+              "weight": 325,
+              "percent": 80.2,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-1-workout-8",
+              "date": "2026-01-26",
+              "weight": 335,
+              "percent": 82.7,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "squat",
+          "liftGroupLabel": "Squat",
+          "liftRole": "main"
+        },
+        {
+          "id": "demo-2-lift-2",
+          "name": "Box Squat",
+          "oneRepMax": 425,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 360,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 360,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 360,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-2-workout-1",
+              "date": "2026-01-05",
+              "weight": 235,
+              "percent": 65.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-2-workout-2",
+              "date": "2026-01-08",
+              "weight": 245,
+              "percent": 68.1,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-2-workout-3",
+              "date": "2026-01-11",
+              "weight": 250,
+              "percent": 69.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-2-workout-4",
+              "date": "2026-01-14",
+              "weight": 260,
+              "percent": 72.2,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-2-workout-5",
+              "date": "2026-01-17",
+              "weight": 270,
+              "percent": 75.0,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-2-workout-6",
+              "date": "2026-01-20",
+              "weight": 280,
+              "percent": 77.8,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-2-workout-7",
+              "date": "2026-01-23",
+              "weight": 290,
+              "percent": 80.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-2-workout-8",
+              "date": "2026-01-26",
+              "weight": 295,
+              "percent": 81.9,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "squat",
+          "liftGroupLabel": "Squat",
+          "liftRole": "variation"
+        },
+        {
+          "id": "demo-2-lift-3",
+          "name": "Bench Press",
+          "oneRepMax": 325,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 275,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 275,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 275,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-3-workout-1",
+              "date": "2026-01-05",
+              "weight": 180,
+              "percent": 65.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-3-workout-2",
+              "date": "2026-01-08",
+              "weight": 185,
+              "percent": 67.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-3-workout-3",
+              "date": "2026-01-11",
+              "weight": 195,
+              "percent": 70.9,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-3-workout-4",
+              "date": "2026-01-14",
+              "weight": 200,
+              "percent": 72.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-3-workout-5",
+              "date": "2026-01-17",
+              "weight": 205,
+              "percent": 74.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-3-workout-6",
+              "date": "2026-01-20",
+              "weight": 215,
+              "percent": 78.2,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-3-workout-7",
+              "date": "2026-01-23",
+              "weight": 220,
+              "percent": 80.0,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-3-workout-8",
+              "date": "2026-01-26",
+              "weight": 225,
+              "percent": 81.8,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "bench",
+          "liftGroupLabel": "Bench Press",
+          "liftRole": "main"
+        },
+        {
+          "id": "demo-2-lift-4",
+          "name": "Floor Press",
+          "oneRepMax": 290,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 245,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 245,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 245,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-4-workout-1",
+              "date": "2026-01-05",
+              "weight": 160,
+              "percent": 65.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-4-workout-2",
+              "date": "2026-01-08",
+              "weight": 165,
+              "percent": 67.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-4-workout-3",
+              "date": "2026-01-11",
+              "weight": 170,
+              "percent": 69.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-4-workout-4",
+              "date": "2026-01-14",
+              "weight": 180,
+              "percent": 73.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-4-workout-5",
+              "date": "2026-01-17",
+              "weight": 185,
+              "percent": 75.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-4-workout-6",
+              "date": "2026-01-20",
+              "weight": 190,
+              "percent": 77.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-4-workout-7",
+              "date": "2026-01-23",
+              "weight": 195,
+              "percent": 79.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-4-workout-8",
+              "date": "2026-01-26",
+              "weight": 200,
+              "percent": 81.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "bench",
+          "liftGroupLabel": "Bench Press",
+          "liftRole": "variation"
+        },
+        {
+          "id": "demo-2-lift-5",
+          "name": "Deadlift",
+          "oneRepMax": 525,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 445,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 445,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 445,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-5-workout-1",
+              "date": "2026-01-05",
+              "weight": 290,
+              "percent": 65.2,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-5-workout-2",
+              "date": "2026-01-08",
+              "weight": 300,
+              "percent": 67.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-5-workout-3",
+              "date": "2026-01-11",
+              "weight": 310,
+              "percent": 69.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-5-workout-4",
+              "date": "2026-01-14",
+              "weight": 325,
+              "percent": 73.0,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-5-workout-5",
+              "date": "2026-01-17",
+              "weight": 335,
+              "percent": 75.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-5-workout-6",
+              "date": "2026-01-20",
+              "weight": 345,
+              "percent": 77.5,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-5-workout-7",
+              "date": "2026-01-23",
+              "weight": 355,
+              "percent": 79.8,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-5-workout-8",
+              "date": "2026-01-26",
+              "weight": 365,
+              "percent": 82.0,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "deadlift",
+          "liftGroupLabel": "Deadlift",
+          "liftRole": "main",
+          "deadliftStyle": "conventional"
+        },
+        {
+          "id": "demo-2-lift-6",
+          "name": "Deadlift",
+          "oneRepMax": 500,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 425,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 425,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 425,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-6-workout-1",
+              "date": "2026-01-05",
+              "weight": 275,
+              "percent": 64.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-6-workout-2",
+              "date": "2026-01-08",
+              "weight": 285,
+              "percent": 67.1,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-6-workout-3",
+              "date": "2026-01-11",
+              "weight": 300,
+              "percent": 70.6,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-6-workout-4",
+              "date": "2026-01-14",
+              "weight": 310,
+              "percent": 72.9,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-6-workout-5",
+              "date": "2026-01-17",
+              "weight": 320,
+              "percent": 75.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-6-workout-6",
+              "date": "2026-01-20",
+              "weight": 330,
+              "percent": 77.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-6-workout-7",
+              "date": "2026-01-23",
+              "weight": 340,
+              "percent": 80.0,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-6-workout-8",
+              "date": "2026-01-26",
+              "weight": 350,
+              "percent": 82.4,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "deadlift",
+          "liftGroupLabel": "Deadlift",
+          "liftRole": "main",
+          "deadliftStyle": "sumo"
+        },
+        {
+          "id": "demo-2-lift-7",
+          "name": "Rack Pull",
+          "oneRepMax": 575,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 490,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 490,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 490,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-7-workout-1",
+              "date": "2026-01-05",
+              "weight": 320,
+              "percent": 65.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-7-workout-2",
+              "date": "2026-01-08",
+              "weight": 330,
+              "percent": 67.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-7-workout-3",
+              "date": "2026-01-11",
+              "weight": 345,
+              "percent": 70.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-7-workout-4",
+              "date": "2026-01-14",
+              "weight": 355,
+              "percent": 72.4,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-7-workout-5",
+              "date": "2026-01-17",
+              "weight": 370,
+              "percent": 75.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-7-workout-6",
+              "date": "2026-01-20",
+              "weight": 380,
+              "percent": 77.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-7-workout-7",
+              "date": "2026-01-23",
+              "weight": 390,
+              "percent": 79.6,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-7-workout-8",
+              "date": "2026-01-26",
+              "weight": 405,
+              "percent": 82.7,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "deadlift",
+          "liftGroupLabel": "Deadlift",
+          "liftRole": "variation",
+          "deadliftStyle": "conventional"
+        },
+        {
+          "id": "demo-2-lift-8",
+          "name": "Overhead Press",
+          "oneRepMax": 200,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 170,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 170,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 170,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-8-workout-1",
+              "date": "2026-01-05",
+              "weight": 110,
+              "percent": 64.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-8-workout-2",
+              "date": "2026-01-08",
+              "weight": 115,
+              "percent": 67.6,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-8-workout-3",
+              "date": "2026-01-11",
+              "weight": 120,
+              "percent": 70.6,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-8-workout-4",
+              "date": "2026-01-14",
+              "weight": 125,
+              "percent": 73.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-8-workout-5",
+              "date": "2026-01-17",
+              "weight": 130,
+              "percent": 76.5,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-8-workout-6",
+              "date": "2026-01-20",
+              "weight": 130,
+              "percent": 76.5,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-8-workout-7",
+              "date": "2026-01-23",
+              "weight": 135,
+              "percent": 79.4,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-8-workout-8",
+              "date": "2026-01-26",
+              "weight": 140,
+              "percent": 82.4,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "overhead",
+          "liftGroupLabel": "Overhead Press",
+          "liftRole": "main"
+        },
+        {
+          "id": "demo-2-lift-9",
+          "name": "Log",
+          "oneRepMax": 175,
+          "trainingMaxPercent": 85,
+          "trainingMaxBase": 150,
+          "manualTrainingMaxAdjustment": 0,
+          "increases": 0,
+          "reps": {
+            "100": 5
+          },
+          "records": {
+            "100": [
+              {
+                "weight": 150,
+                "reps": 5,
+                "awardedForReps": 0,
+                "savedAt": "2026-01-01T12:00:00Z",
+                "attempts": [
+                  {
+                    "weight": 150,
+                    "reps": 5,
+                    "savedAt": "2026-01-01T12:00:00Z"
+                  }
+                ]
+              }
+            ]
+          },
+          "arRecords": {},
+          "arReps": {},
+          "increaseAwards": {},
+          "setSessions": [],
+          "workouts": [
+            {
+              "id": "demo-2-lift-9-workout-1",
+              "date": "2026-01-05",
+              "weight": 100,
+              "percent": 66.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-05T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-9-workout-2",
+              "date": "2026-01-08",
+              "weight": 100,
+              "percent": 66.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-08T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-9-workout-3",
+              "date": "2026-01-11",
+              "weight": 105,
+              "percent": 70.0,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-11T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-9-workout-4",
+              "date": "2026-01-14",
+              "weight": 110,
+              "percent": 73.3,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-14T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-9-workout-5",
+              "date": "2026-01-17",
+              "weight": 115,
+              "percent": 76.7,
+              "sets": 3,
+              "reps": 5,
+              "savedAt": "2026-01-17T12:00:00Z",
+              "accommodatingResistance": null
+            },
+            {
+              "id": "demo-2-lift-9-workout-6",
+              "date": "2026-01-20",
+              "weight": 115,
+              "percent": 76.7,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-20T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "chains",
+                "weight": 40,
+                "basis": "per-side"
+              }
+            },
+            {
+              "id": "demo-2-lift-9-workout-7",
+              "date": "2026-01-23",
+              "weight": 120,
+              "percent": 80.0,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-23T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "micro-mini",
+                "setup": "single",
+                "direction": "down",
+                "weight": 30,
+                "basis": "total",
+                "notes": "Fictional demo setup",
+                "valueSource": "manual"
+              }
+            },
+            {
+              "id": "demo-2-lift-9-workout-8",
+              "date": "2026-01-26",
+              "weight": 125,
+              "percent": 83.3,
+              "sets": 3,
+              "reps": 3,
+              "savedAt": "2026-01-26T12:00:00Z",
+              "accommodatingResistance": {
+                "type": "bands",
+                "band": "mini",
+                "setup": "single",
+                "direction": "reverse",
+                "weight": 25,
+                "basis": "total",
+                "notes": "Fictional demo assistance",
+                "valueSource": "manual"
+              }
+            }
+          ],
+          "liftGroup": "overhead",
+          "liftGroupLabel": "Overhead Press",
+          "liftRole": "variation"
+        }
+      ]
+    }
+  ],
+  "view": "athlete",
+  "selectedAthleteId": "demo-1",
+  "selectedId": "demo-1-lift-1",
+  "darkMode": false,
+  "volumePeriod": "week",
+  "bestRepsMode": "weight",
+  "deadliftStyle": "conventional",
+  "activeLiftGroup": "squat",
+  "units": {
+    "max": "lb",
+    "table": "lb",
+    "workout": "lb",
+    "volume": "lb",
+    "loader": "lb"
+  }
+}
